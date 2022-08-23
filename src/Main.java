@@ -65,6 +65,19 @@ public class Main {
             default:
                 System.out.println("Такого месяца не существует");
         }
+        // Задание 6
+        int age = 19;
+        int salary = 58_000;
 
+        if (age >= 23) {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * 3) + " рублей");
+        } else {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * 2) + " рублей");
+        }
+        if (salary >= 50_000 && salary < 80_000) {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * 1.2) + " рублей");
+        } else if (salary >= 80_000) {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * 1.5) + " рублей");
+        }
         }
     }
